@@ -25,7 +25,7 @@ class Ebook:
 	base_name = str()
 	chapters = []
 
-	CHAPTER_NUMBER_PATTERN = re.compile(f"Chapter_([\d.]+\d)")
+	CHAPTER_NUMBER_PATTERN = re.compile(f"Chapter_([\d.]+\d*)")
 	# TODO: verify that this matches on "Chapter_115.2_something.xhtml" AND "Chapter_100.xhtml"
 
 
