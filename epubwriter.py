@@ -66,9 +66,9 @@ class Ebook:
 	def write_container(self):
 		container_contents = f"""<?xml version="1.0"?>
 <container version="1.0" xmlns="urn:oasis:names:tc:opendocument:xmlns:container">
-  <rootfiles>
-    <rootfile full-path="{self.rootfile_path_name}" media-type="application/oebps-package+xml"/>
-  </rootfiles>
+	<rootfiles>
+		<rootfile full-path="{self.rootfile_path_name}" media-type="application/oebps-package+xml"/>
+	</rootfiles>
 </container>
 		"""
 		with open(os.path.join(self.base_name, self.meta_directory, "container.xml"), "w") as f:
